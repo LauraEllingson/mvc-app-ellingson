@@ -23,12 +23,6 @@ app.use(express.static(path.join(__dirname, "public")));
 // Use routes from routes/index.js
 app.use("/", routes);
 
-// Default route (optional, can be defined in routes/index.js instead)
-app.get("/", (req, res) => {
-  res.render("index", { title: "Recipe Finder" });
-});
-
 // Start server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
-
