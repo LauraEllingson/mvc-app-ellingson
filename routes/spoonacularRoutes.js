@@ -4,7 +4,7 @@ const axios = require("axios");
 
 const SPOONACULAR_API_BASE = "https://api.spoonacular.com";
 
-// Endpoint to get random recipes
+// get random recipes
 router.get("/random", async (req, res) => {
   const { number = 1 } = req.query; // Number of random recipes to fetch
 

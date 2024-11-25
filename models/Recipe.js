@@ -7,6 +7,5 @@ const RecipeSchema = new mongoose.Schema({
   instructions: { type: String },
 });
 
-// Specify the collection name "favorite-recipes"
 module.exports = mongoose.model("Recipe", RecipeSchema, "favorite-recipes");
 

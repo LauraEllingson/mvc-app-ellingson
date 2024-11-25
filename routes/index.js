@@ -1,12 +1,11 @@
 const express = require("express");
 const router = express.Router();
 
-// Import individual route files
+// Import individual routes
 const spoonacularRoutes = require("./spoonacularRoutes");
 const recipeRoutes = require("./recipeRoutes");
 const favoritesRoutes = require("./favoritesRoutes");
 
-// Mount routes
 router.use("/api/spoonacular", spoonacularRoutes);
 router.use("/api/recipes", recipeRoutes);
 router.use("/favorites", favoritesRoutes);

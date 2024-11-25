@@ -67,7 +67,7 @@ const getRandomRecipes = async () => {
       }
     } catch (error) {
       console.error("Error saving recipe:", error);
-      alert("Failed to save recipe. Please try again later.");
+      alert("Failed to save recipe.");
     }
   };
   
